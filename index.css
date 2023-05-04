@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#datas {
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#kedvencek {
+    background-color: #bbb;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+}
+
+.termek {
+    font-size: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    color: #555;
+}
+.termek button{
+    font-size: 18px;
+    background-color: beige;
+    background: linear-gradient(45deg, beige, rgb(223, 223, 186));
+    border-radius: 5px;
+    border: 2px solid rgb(223, 223, 186);
+    transition: 0.5s opacity;
+    opacity: 0.9;
+    color: #555;
+    cursor: pointer;
+}
+
+.termek button:hover {
+    opacity: 1;
+}
